@@ -1,0 +1,74 @@
+[System]
+Name='Organizacionales'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=27
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Responsabilidad_y_Compromiso'
+Range=[0 10]
+NumMFs=3
+MF1='Bajo':'trapmf',[0 0 5 6.5]
+MF2='Promedio':'trapmf',[5 6 7 8]
+MF3='Alto':'trapmf',[7 8 10 10]
+
+[Input2]
+Name='Trabajo_en_Equipo'
+Range=[0 10]
+NumMFs=3
+MF1='Bajo':'trapmf',[0 0 5 6.5]
+MF2='Promedio':'trapmf',[5 6 7 8]
+MF3='Alto':'trapmf',[7 8 10 10]
+
+[Input3]
+Name='Comunicación_Efectiva'
+Range=[0 10]
+NumMFs=3
+MF1='Bajo':'trapmf',[0 0 5 6.5]
+MF2='Promedio':'trapmf',[5 6 7 8]
+MF3='Alto':'trapmf',[7 8 10 10]
+
+[Output1]
+Name='Hab_Organizacionales'
+Range=[0 10]
+NumMFs=4
+MF1='No_Confiable':'trapmf',[0 0 3 4]
+MF2='Poco_Confiable':'trapmf',[3.5 4 5 6]
+MF3='Confiable':'trapmf',[5 6 7 8]
+MF4='Muy_Confiable':'trapmf',[7 8 10 10]
+
+[Rules]
+3 3 3, 4 (1) : 1
+3 3 2, 4 (1) : 1
+3 3 1, 3 (1) : 1
+3 2 3, 4 (1) : 1
+3 2 2, 4 (1) : 1
+3 2 1, 3 (1) : 1
+3 1 3, 3 (1) : 1
+3 1 2, 3 (1) : 1
+3 1 1, 2 (1) : 1
+2 3 3, 4 (1) : 1
+2 3 2, 4 (1) : 1
+2 3 1, 3 (1) : 1
+2 2 3, 4 (1) : 1
+2 2 2, 3 (1) : 1
+2 2 1, 3 (1) : 1
+2 1 3, 3 (1) : 1
+2 1 2, 3 (1) : 1
+2 1 1, 2 (1) : 1
+1 3 3, 3 (1) : 1
+1 3 2, 3 (1) : 1
+1 3 1, 2 (1) : 1
+1 2 3, 3 (1) : 1
+1 2 2, 3 (1) : 1
+1 2 1, 2 (1) : 1
+1 1 3, 1 (1) : 1
+1 1 2, 1 (1) : 1
+1 1 1, 1 (1) : 1
