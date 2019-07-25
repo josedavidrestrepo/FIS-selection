@@ -4,7 +4,7 @@ Type='mamdani'
 Version=2.0
 NumInputs=2
 NumOutputs=1
-NumRules=14
+NumRules=20
 AndMethod='min'
 OrMethod='max'
 ImpMethod='min'
@@ -27,7 +27,7 @@ NumMFs=5
 MF1='Muy_Joven':'trapmf',[18 18 21.5 25]
 MF2='Joven':'trimf',[23 27 31]
 MF3='Adulto_Joven':'trimf',[28 32.5 37]
-MF4='Adulto':'trimf',[31 38 46]
+MF4='Adulto':'trimf',[34 38 46]
 MF5='Muy_Mayor':'trapmf',[42 48.5 55 55]
 
 [Output1]
